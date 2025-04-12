@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tricubic interpolation - Situs Pengetahuan</title>
+<meta content="In the mathematical subfield numerical analysis, tricubic interpolation is a method for obtaining values at arbitrary points in 3D space of a function" name="description"/>
+<style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container { display: flex; }
+        .content { flex: 3; padding-right: 20px; }
+        .sidebar { flex: 1; background: #f5f5f5; padding: 15px; }
+        nav { background: #333; padding: 10px; margin-bottom: 20px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        img { max-width: 100%; height: auto; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .ad-container { margin: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+<nav>
+<a href="https://situsanda.com">Beranda</a>
+<a href="https://situsanda.com/kategori.html">Kategori</a>
+</nav>
+<div class="container">
+<div class="content">
+<h1>Tricubic interpolation</h1>
+            
+            In the mathematical subfield numerical analysis, tricubic interpolation is a method for obtaining values at arbitrary points in 3D space of a function defined on a regular grid.  The approach involves approximating the function locally by an expression of the form <br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/>        f<br/><br/>        (<br/><br/>        x<br/><br/>        ,<br/><br/>        y<br/><br/>        ,<br/><br/>        z<br/><br/>        )<br/><br/>        =<br/><br/> <br/><br/>          ∑<br/><br/> <br/><br/>            i<br/><br/>            =<br/><br/>            0<br/><br/> <br/><br/> <br/><br/>            3<br/><br/> <br/><br/> <br/><br/> <br/><br/>          ∑<br/><br/> <br/><br/>            j<br/><br/>            =<br/><br/>            0<br/><br/> <br/><br/> <br/><br/>            3<br/><br/> <br/><br/> <br/><br/> <br/><br/>          ∑<br/><br/> <br/><br/>            k<br/><br/>            =<br/><br/>            0<br/><br/> <br/><br/> <br/><br/>            3<br/><br/> <br/><br/> <br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            i<br/><br/>            j<br/><br/>            k<br/><br/> <br/><br/> <br/><br/> <br/><br/>          x<br/><br/> <br/><br/>            i<br/><br/> <br/><br/> <br/><br/> <br/><br/>          y<br/><br/> <br/><br/>            j<br/><br/> <br/><br/> <br/><br/> <br/><br/>          z<br/><br/> <br/><br/>            k<br/><br/> <br/><br/> <br/><br/>        .<br/><br/> <br/><br/> <br/><br/>    {\displaystyle f(x,y,z)=\sum _{i=0}^{3}\sum _{j=0}^{3}\sum _{k=0}^{3}a_{ijk}x^{i}y^{j}z^{k}.}<br/><br/> <br/><br/><br/><br/>This form has 64 coefficients <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            i<br/><br/>            j<br/><br/>            k<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle a_{ijk}}<br/><br/> <br/><br/>; requiring the function to have a given value or given directional derivative at a point places one linear constraint on the 64 coefficients.<br/><br/>The term tricubic interpolation is used in more than one context; some experiments measure both the value of a function and its spatial derivatives, and it is desirable to interpolate preserving the values and the measured derivatives at the grid points.  Those provide 32 constraints on the coefficients, and another 32 constraints can be provided by requiring smoothness of higher derivatives.<br/><br/>In other contexts, we can obtain the 64 coefficients by considering a 3×3×3 grid of small cubes surrounding the cube inside which we evaluate the function, and fitting the function at the 64 points on the corners of this grid.<br/><br/>The cubic interpolation article indicates that the method is equivalent to a sequential application of one-dimensional cubic interpolators. Let <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>            C<br/><br/>            I<br/><br/>            N<br/><br/>            T<br/><br/> <br/><br/> <br/><br/>            x<br/><br/> <br/><br/> <br/><br/>        (<br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            −<br/><br/>            1<br/><br/> <br/><br/> <br/><br/>        ,<br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            0<br/><br/> <br/><br/> <br/><br/>        ,<br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            1<br/><br/> <br/><br/> <br/><br/>        ,<br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            2<br/><br/> <br/><br/> <br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle \mathrm {CINT} _{x}(a_{-1},a_{0},a_{1},a_{2})}<br/><br/> <br/><br/> be the value of a monovariable cubic polynomial (e.g. constrained by values, <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            −<br/><br/>            1<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle a_{-1}}<br/><br/> <br/><br/>, <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            0<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle a_{0}}<br/><br/> <br/><br/>, <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            1<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle a_{1}}<br/><br/> <br/><br/>, <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          a<br/><br/> <br/><br/>            2<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle a_{2}}<br/><br/> <br/><br/> from consecutive grid points) evaluated at <br/><br/> <br/><br/> <br/><br/> <br/><br/>        x<br/><br/> <br/><br/> <br/><br/>    {\displaystyle x}<br/><br/> <br/><br/>. In many useful cases, these cubic polynomials have the form <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>            C<br/><br/>            I<br/><br/>            N<br/><br/>            T<br/><br/> <br/><br/> <br/><br/>            x<br/><br/> <br/><br/> <br/><br/>        (<br/><br/> <br/><br/>          u<br/><br/> <br/><br/>            −<br/><br/>            1<br/><br/> <br/><br/> <br/><br/>        ,<br/><br/> <br/><br/>          u<br/><br/> <br/><br/>            0<br/><br/> <br/><br/> <br/><br/>        ,<br/><br/> <br/><br/>          u<br/><br/> <br/><br/>            1<br/><br/> <br/><br/> <br/><br/>        ,<br/><br/> <br/><br/>          u<br/><br/> <br/><br/>            2<br/><br/> <br/><br/> <br/><br/>        )<br/><br/>        =<br/><br/> <br/><br/> <br/><br/>            v<br/><br/> <br/><br/> <br/><br/>            x<br/><br/> <br/><br/> <br/><br/>        ⋅<br/><br/> <br/><br/>          (<br/><br/> <br/><br/> <br/><br/>              u<br/><br/> <br/><br/>                −<br/><br/>                1<br/><br/> <br/><br/> <br/><br/>            ,<br/><br/> <br/><br/>              u<br/><br/> <br/><br/>                0<br/><br/> <br/><br/> <br/><br/>            ,<br/><br/> <br/><br/>              u<br/><br/> <br/><br/>                1<br/><br/> <br/><br/> <br/><br/>            ,<br/><br/> <br/><br/>              u<br/><br/> <br/><br/>                2<br/><br/> <br/><br/> <br/><br/> <br/><br/>          )<br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle \mathrm {CINT} _{x}(u_{-1},u_{0},u_{1},u_{2})=\mathbf {v} _{x}\cdot \left(u_{-1},u_{0},u_{1},u_{2}\right)}<br/><br/> <br/><br/> for some vector <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>            v<br/><br/> <br/><br/> <br/><br/>            x<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle \mathbf {v} _{x}}<br/><br/> <br/><br/> which is a function of <br/><br/> <br/><br/> <br/><br/> <br/><br/>        x<br/><br/> <br/><br/> <br/><br/>    {\displaystyle x}<br/><br/> <br/><br/> alone.
+        </div>
+<div class="sidebar">
+<div class="ad-container">
+<script type="text/javascript">
+                            atOptions = {
+                                'key': '0cfd3aa635d270e67b5af101e4d64321',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+<script src="//padsims.com/0cfd3aa635d270e67b5af101e4d64321/invoke.js" type="text/javascript"></script>
+</div>
+
+<h3>Artikel Terkait</h3>
+<ul>
+<li><a href="arisa-station.html">Arisa Station</a></li>
+<li><a href="barbara-lukermann.html">Barbara Lukermann</a></li>
+<li><a href="diablo-dam.html">Diablo Dam</a></li>
+<li><a href="tricubic-interpolation.html">Tricubic interpolation</a></li>
+<li><a href="mark-tilden.html">Mark Tilden</a></li>
+</ul>
+</div>
+</div>
+<footer>
+<p>© 2023 Situs Pengetahuan</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Smith predictor - Situs Pengetahuan</title>
+<meta content="The Smith predictor (invented by O. J. M. Smith in 1957) is a type of predictive controller designed to control systems with a significant feedback ti" name="description"/>
+<style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .container { display: flex; }
+        .content { flex: 3; padding-right: 20px; }
+        .sidebar { flex: 1; background: #f5f5f5; padding: 15px; }
+        nav { background: #333; padding: 10px; margin-bottom: 20px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; }
+        img { max-width: 100%; height: auto; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; }
+        .ad-container { margin: 20px 0; text-align: center; }
+    </style>
+</head>
+<body>
+<nav>
+<a href="https://situsanda.com">Beranda</a>
+<a href="https://situsanda.com/kategori.html">Kategori</a>
+</nav>
+<div class="container">
+<div class="content">
+<h1>Smith predictor</h1>
+<img alt="Smith predictor" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Nuvola_apps_katomic.svg"/>
+            
+            The Smith predictor (invented by O. J. M. Smith in 1957) is a type of predictive controller designed to control systems with a significant feedback time delay. The idea can be illustrated as follows.<br/><br/>Suppose the plant consists of <br/><br/> <br/><br/> <br/><br/> <br/><br/>        G<br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle G(z)}<br/><br/> <br/><br/> followed by a pure time delay <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>          z<br/><br/> <br/><br/>            −<br/><br/>            k<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle z^{-k}}<br/><br/> <br/><br/>. <br/><br/> <br/><br/> <br/><br/> <br/><br/>        z<br/><br/> <br/><br/> <br/><br/>    {\displaystyle z}<br/><br/> <br/><br/> refers to the Z-transform of the transfer function relating the inputs and outputs of the plant <br/><br/> <br/><br/> <br/><br/> <br/><br/>        G<br/><br/> <br/><br/> <br/><br/>    {\displaystyle G}<br/><br/> <br/><br/>.<br/><br/>As a first step, suppose we only consider <br/><br/> <br/><br/> <br/><br/> <br/><br/>        G<br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle G(z)}<br/><br/> <br/><br/> (the plant without a delay) and design a controller <br/><br/> <br/><br/> <br/><br/> <br/><br/>        C<br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle C(z)}<br/><br/> <br/><br/> with a closed-loop transfer function <br/><br/> <br/><br/> <br/><br/> <br/><br/>        H<br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/>        =<br/><br/> <br/><br/> <br/><br/> <br/><br/>              C<br/><br/>              (<br/><br/>              z<br/><br/>              )<br/><br/>              G<br/><br/>              (<br/><br/>              z<br/><br/>              )<br/><br/> <br/><br/> <br/><br/>              1<br/><br/>              +<br/><br/>              C<br/><br/>              (<br/><br/>              z<br/><br/>              )<br/><br/>              G<br/><br/>              (<br/><br/>              z<br/><br/>              )<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle H(z)={\frac {C(z)G(z)}{1+C(z)G(z)}}}<br/><br/> <br/><br/> that we consider satisfactory.<br/><br/>Next, our objective is to design a controller <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>              C<br/><br/>              ¯<br/><br/> <br/><br/> <br/><br/> <br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle {\bar {C}}(z)}<br/><br/> <br/><br/> for the plant <br/><br/> <br/><br/> <br/><br/> <br/><br/>        G<br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/>          z<br/><br/> <br/><br/>            −<br/><br/>            k<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle G(z)z^{-k}}<br/><br/> <br/><br/> so that the closed loop transfer function <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>              H<br/><br/>              ¯<br/><br/> <br/><br/> <br/><br/> <br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle {\bar {H}}(z)}<br/><br/> <br/><br/> equals <br/><br/> <br/><br/> <br/><br/> <br/><br/>        H<br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/>          z<br/><br/> <br/><br/>            −<br/><br/>            k<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle H(z)z^{-k}}<br/><br/> <br/><br/>.<br/><br/>Solving <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>                    C<br/><br/>                    ¯<br/><br/> <br/><br/> <br/><br/> <br/><br/>              G<br/><br/> <br/><br/>                z<br/><br/> <br/><br/>                  −<br/><br/>                  k<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>              1<br/><br/>              +<br/><br/> <br/><br/> <br/><br/> <br/><br/>                    C<br/><br/>                    ¯<br/><br/> <br/><br/> <br/><br/> <br/><br/>              G<br/><br/> <br/><br/>                z<br/><br/> <br/><br/>                  −<br/><br/>                  k<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>        =<br/><br/> <br/><br/>          z<br/><br/> <br/><br/>            −<br/><br/>            k<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>              C<br/><br/>              G<br/><br/> <br/><br/> <br/><br/>              1<br/><br/>              +<br/><br/>              C<br/><br/>              G<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle {\frac {{\bar {C}}Gz^{-k}}{1+{\bar {C}}Gz^{-k}}}=z^{-k}{\frac {CG}{1+CG}}}<br/><br/> <br/><br/>,<br/><br/>we obtain<br/><br/><br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>              C<br/><br/>              ¯<br/><br/> <br/><br/> <br/><br/> <br/><br/>        =<br/><br/> <br/><br/> <br/><br/>            C<br/><br/> <br/><br/>              1<br/><br/>              +<br/><br/>              C<br/><br/>              G<br/><br/>              (<br/><br/>              1<br/><br/>              −<br/><br/> <br/><br/>                z<br/><br/> <br/><br/>                  −<br/><br/>                  k<br/><br/> <br/><br/> <br/><br/>              )<br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>    {\displaystyle {\bar {C}}={\frac {C}{1+CG(1-z^{-k})}}}<br/><br/> <br/><br/>. The controller is implemented as shown in the following figure, where <br/><br/> <br/><br/> <br/><br/> <br/><br/>        G<br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle G(z)}<br/><br/> <br/><br/> has been changed to <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>              G<br/><br/>              ^<br/><br/> <br/><br/> <br/><br/> <br/><br/>        (<br/><br/>        z<br/><br/>        )<br/><br/> <br/><br/> <br/><br/>    {\displaystyle {\hat {G}}(z)}<br/><br/> <br/><br/> to indicate that it is a model used by the controller.<br/><br/><br/><br/>Note that there are two feedback loops.  The outer control loop feeds the output back to the input, as usual.
+        </div>
+<div class="sidebar">
+<div class="ad-container">
+<script type="text/javascript">
+                            atOptions = {
+                                'key': '0cfd3aa635d270e67b5af101e4d64321',
+                                'format': 'iframe',
+                                'height': 250,
+                                'width': 300,
+                                'params': {}
+                            };
+                        </script>
+<script src="//padsims.com/0cfd3aa635d270e67b5af101e4d64321/invoke.js" type="text/javascript"></script>
+</div>
+
+<h3>Artikel Terkait</h3>
+<ul>
+<li><a href="smith-predictor.html">Smith predictor</a></li>
+</ul>
+</div>
+</div>
+<footer>
+<p>© 2023 Situs Pengetahuan</p>
+</footer>
+</body>
+</html>
